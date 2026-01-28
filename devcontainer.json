@@ -1,0 +1,16 @@
+{
+    "name": "PHP, MariaDB & phpMyAdmin",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [8080, 3306, 8081],
+    "portsAttributes": {
+        "8080": { "label": "Web App" },
+        "8081": { "label": "phpMyAdmin (Admin UI)" }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": ["onecentlin.laravel-extension-pack", "cweijan.vscode-mysql-client2"]
+        }
+    }
+}
